@@ -1,0 +1,10 @@
+name: "NumenActions ClusterDefs"
+description: "Update the cluster defs repo"
+runs:
+  using: "docker"
+  image: "docker://ghcr.io/fiveateooate/numenactions:latest"
+  entrypoint: "/usr/local/bin/numencli"
+  args:
+    - --loglevel
+    - debug
+    - clusterdefs
